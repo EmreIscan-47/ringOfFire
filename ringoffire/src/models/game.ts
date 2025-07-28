@@ -14,6 +14,14 @@ export class GamePublic {
     }
     shuffle(this.stack)
   }
+  public toJson(){
+    return {
+      players: this.players, 
+      stack: this.stack,
+      playedCards: this.playedCard,
+      currentPlayer: this.currentPlayer
+    }
+  }
 }
 
 
